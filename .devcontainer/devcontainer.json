@@ -1,0 +1,33 @@
+{
+    "name": "Rails Development",
+    "dockerComposeFile": "../compose.yaml",
+    "service": "app",
+    "forwardPorts": [
+      3000
+    ],
+    "workspaceFolder": "/rails",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "castwide.solargraph", // solargraph
+          "KoichiSasada.vscode-rdbg", // Ruby Debug
+          "bajdzis.vscode-database", // Database
+          "eamodio.gitlens", // GitLens
+          "mtxr.sqltools", // SQLTools本体
+          "mtxr.sqltools-driver-pg", // PostgreSQL用ドライバー
+          "cweijan.vscode-database-client2", // Database Client
+          "ms-azuretools.vscode-docker" // Docker
+        ],
+        "settings": {
+          "solargraph.useBundler": true,
+          "solargraph.formatting": true,
+          "solargraph.diagnostics": true,
+          "ruby.useBundler": true
+        }
+      }
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "postCreateCommand": "apt-get update && apt-get install -y git build-essential libssl-dev zlib1g-dev libpq-dev libyaml-dev && bundle install"
+  }
