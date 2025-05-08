@@ -14,6 +14,7 @@ gem "puma",            ">= 6.0.0"
 gem "bootsnap",        "1.16.0", require: false
 gem "sqlite3",         "1.6.1"
 gem "concurrent-ruby", "1.3.4"
+gem "bcrypt",          "3.1.18"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
