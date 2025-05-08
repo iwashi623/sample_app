@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby "3.2.8"
 
 gem "rails", "~> 7.2.2", ">= 7.2.2.1"
+gem "bootstrap-sass",  "3.4.1"
 gem "sassc-rails",     "2.1.2"
 gem "sprockets-rails", "3.4.2"
 gem "importmap-rails", "1.1.5"
