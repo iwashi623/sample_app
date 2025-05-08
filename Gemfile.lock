@@ -132,8 +132,9 @@ GEM
       minitest (>= 3.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    importmap-rails (1.1.5)
+    importmap-rails (2.1.0)
       actionpack (>= 6.0.0)
+      activesupport (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.8.0)
     irb (1.15.2)
@@ -213,7 +214,7 @@ GEM
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.1.13)
+    rack (3.1.14)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -395,7 +396,7 @@ DEPENDENCIES
   debug
   guard (= 2.18.0)
   guard-minitest (= 2.4.6)
-  importmap-rails (= 1.1.5)
+  importmap-rails (= 2.1.0)
   irb
   jbuilder (= 2.11.5)
   minitest (= 5.18.0)
