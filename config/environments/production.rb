@@ -86,10 +86,9 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     port: 587,
-    host: "sandbox.smtp.mailtrap.io",
-    address: "sandbox.smtp.mailtrap.io",
-    user_name: ENV["SMTP_LOGIN"],
-    password: ENV["SMTP_PASSWORD"],
+    address: "smtp.mailgun.org",
+    user_name: ENV["MAILGUN_SMTP_LOGIN"],
+    password: ENV["MAILGUN_SMTP_PASSWORD"],
     domain: host,
     authentication: :plain
   }
