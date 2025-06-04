@@ -29,5 +29,5 @@
     "features": {
       "ghcr.io/devcontainers/features/git:1": {}
     },
-    "postCreateCommand": "apt-get update && apt-get install -y git build-essential libssl-dev zlib1g-dev libpq-dev libyaml-dev && bundle install"
+    "postCreateCommand": "apt-get update && apt-get install -y git build-essential libssl-dev zlib1g-dev libpq-dev libyaml-dev imagemagick && bundle install"
   }
